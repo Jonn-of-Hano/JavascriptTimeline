@@ -1,0 +1,112 @@
+body {
+    background-color: black;
+    font-family: 'Special Elite';font-size: 12px;
+    color: white;
+}
+
+header {
+    border: 5px;
+    border-color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+button {
+    border-radius: 15px;
+    padding-inline: 4%;
+    padding-block: 2%;
+    margin: 2%;
+    background-color: magenta;
+    font-family: 'Special Elite';
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px #000000;   
+}
+
+.timelineButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.timelineButtonSelected {
+    background-color: lime;
+}
+
+.timelineInformation {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.timelineText {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+
+#timelineImage {
+    width: 50%;
+    height: auto;
+    margin: 4%;
+    vertical-align: text-top;
+    box-shadow: 5px 2px 2px 25px rgba(239, 121, 233, 0.043);
+    border-radius: 20px;
+}
+
+#timelineMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.unselectedInfo {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selectedInfo {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .selectedInfo {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .timelineText {
+        text-align: center;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .timelineButtonContainer {
+        flex-direction: column;
+    }
+
+    #timelineImage {
+        width: 90%;
+    }
+  }
